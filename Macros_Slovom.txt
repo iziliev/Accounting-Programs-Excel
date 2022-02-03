@@ -112,7 +112,7 @@ Public Function ToWords(ByVal dblValue As Double, Optional Measure As Variant, O
     End If
     ToWords = sResult
 End Function
-'use
+
 Public Function ToAllWords(ByVal dblValue As Double) As String
     ToAllWords = ToWords(Int(dblValue), "лв.") & " и " & LCase$(ToWords(Round((dblValue - Int(dblValue)) * 100), "ст.", "F"))
 End Function
